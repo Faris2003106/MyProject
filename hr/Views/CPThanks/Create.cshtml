@@ -1,0 +1,73 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_ControlPanel.cshtml";
+}
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Amiri&family=Aref+Ruqaa&family=Cairo:wght@200&display=swap" rel="stylesheet">
+
+<h1 style=" font-family: 'Tajawal', sans-serif; text-align: center;">إضافة جائزة  </h1>
+
+<br />
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <div clss="row">
+                <div class=" col-md-6 grid-margin stretch-card" style="font-family:'Tajawal', sans-serif;">
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="forms-sample">
+                                <div class="form-group">
+                                    <label for="exampleInputName1">رقم ID</label>
+                                    <input type="number" class="form-control" id="exampleInputName1" placeholder="رقم ID">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">اسم الجهة</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail3" placeholder="اسم الجهة">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">تعليق مختصر</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail3" placeholder="تعليق مختصر">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword4">تاريخ الجائزة</label>
+                                    <input type="date" class="form-control" id="exampleInputPassword4" placeholder="تاريخ الجائزة">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">نوع الجائزة</label>
+                                    <select id="Type" name="Type" class="form-control">
+                                        <option value="1">شهادة شكر</option>
+                                        <option value="2"> درع تكريم</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">صورة الجائزة</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail3" placeholder="صورة الجائزة">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">رابط الجائزة</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail3" placeholder="رابط الجائزة">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">إظهار </label>
+                                    <div class="form-check form-check-flat form-check-primary">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input">
+                                        </label>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mr-2"><a class="nav-link" asp-action="Index" asp-controller="CPThanks" style="color:white"> حفظ</a></button>
+                <button type="submit" class="btn btn-danger mr-2"><a class="nav-link" asp-action="Index" asp-controller="CPThanks" style="color:white"> إلغاء </a></button>
+            </div>
+        </div>
+    </div>
+</div>
+
+

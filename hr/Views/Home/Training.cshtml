@@ -1,0 +1,76 @@
+﻿@{
+    ViewData["Title"] = "Training Page";
+}
+<!-- ======= Contact Section ======= -->
+<section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+            <h2 style="font-family: 'Cairo', sans-serif;">التواصل</h2>
+            <h3 style="font-family: 'Cairo', sans-serif; color:#003366">لنتحدث دائماً التواصل الداخلي بإدارة الموارد البشرية </h3>
+        </div>
+        <div class="row gx-lg-0 gy-4">
+
+            <div class="col-lg-4">
+                <div class="info-container d-flex flex-column align-items-center justify-content-center">
+                    <div class="info-item d-flex">
+                        <i class="bi bi-geo-alt flex-shrink-0"></i>
+                        <div>
+                            <h5 style="font-family: 'Cairo', sans-serif;">موقعنا :</h5>
+                            <p style="font-family: 'Cairo', sans-serif;">غرفة المدينة المنورة - الموارد البشرية</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="info-item d-flex">
+                        <i class="bi bi-envelope flex-shrink-0"></i>
+                        <div>
+                            <h5 style="font-family: 'Cairo', sans-serif;">البريد الالكتروني :</h5>
+                            <p style="font-family: 'Cairo', sans-serif;">hr@mcci.org.sa</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="info-item d-flex">
+                        <i class="bi bi-clock flex-shrink-0"></i>
+                        <div>
+                            <h5 style="font-family: 'Cairo', sans-serif;">واتساب الادارة :</h5>
+                            <p style="font-family: 'Cairo', sans-serif;"> خلال ساعات العمل - 0148258360</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                    <div class="info-item d-flex">
+                        <i class="bi bi-phone flex-shrink-0"></i>
+                        <div>
+                            <h5 style="font-family: 'Cairo', sans-serif;"> التحويلة :</h5>
+                            <p style="font-family: 'Cairo', sans-serif;">511 - 519</p>
+                        </div>
+                    </div><!-- End Info Item -->
+
+                </div>
+            </div>
+            <div class="col-lg-8">
+                <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <input style="font-family: 'Cairo', sans-serif;" type="text" name="name" class="form-control" id="name" placeholder="الاسم" required>
+                        </div>
+                        <div class="col-md-6 form-group mt-3 mt-md-0">
+                            <input style="font-family: 'Cairo', sans-serif;" type="email" class="form-control" name="email" id="email" placeholder="البريد الالكتروني" required>
+                        </div>
+                    </div>
+                    <div class="form-group mt-3">
+                        <input style="font-family: 'Cairo', sans-serif;" type="text" class="form-control" name="subject" id="subject" placeholder="العنوان" required>
+                    </div>
+                    <div class="form-group mt-3">
+                        <textarea style="font-family: 'Cairo', sans-serif;" class="form-control" name="message" rows="7" placeholder="نص الرسالة" required></textarea>
+                    </div>
+                    <div class="my-3">
+                        <div class="loading" style="font-family: 'Cairo', sans-serif;">جاري الارسال</div>
+                        <div class="error-message"></div>
+                        <div class="sent-message" style="font-family: 'Cairo', sans-serif;">تم ارسال رسالتكم بنجاح. شكراً لكم</div>
+                    </div>
+                    <div class="text-center"><button type="submit" style="font-family: 'Cairo', sans-serif;" background-color="red">ارسال</button></div>
+                </form>
+            </div><!-- End Contact Form -->
+        </div>
+
+    </div>
+</section>

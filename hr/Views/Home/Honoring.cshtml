@@ -1,0 +1,39 @@
+﻿@model IEnumerable<hr.Models.Honoring>
+@{
+    ViewData["Title"] = "Honoring";
+}
+<!-- ======= Blog Section ======= -->
+<section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4 posts-list">
+            @foreach (var item in Model)
+            {
+                <div class="col-xl-4 col-md-6">
+                    <article>
+
+                        <div class="post-img">
+                            <img src="~/img/honoring/@item.ImageUrl" class="img-fluid">
+                        </div>
+
+                        <p class="post-category">@item.Name</p>
+                        <time datetime="2022-01-01">@item.CreateDate.ToString("dd/mm/yyyy")</time>
+
+
+                        <h2 class="title">
+                            <p>@item.Description</p>
+                        </h2>
+
+
+
+                    </article>
+                </div>
+                <!-- End post list item -->
+            }
+
+
+
+        </div>
+    </div>
+</section>
+<!-- End Blog Section -->

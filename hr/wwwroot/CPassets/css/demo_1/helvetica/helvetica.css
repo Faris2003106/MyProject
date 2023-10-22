@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'Helvetica Neue W23 for SKY Bd';
+    src: url('HelveticaNeueW23foSKY-Bd.woff2') format('woff2'),
+        url('HelveticaNeueW23foSKY-Bd.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLT Arabic 55 Roman';
+    src: url('HelveticaNeueLTArabic-Roman.woff2') format('woff2'),
+        url('HelveticaNeueLTArabic-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLT Arabic 75';
+    src: url('HelveticaNeueLTArabic-Bold.woff2') format('woff2'),
+        url('HelveticaNeueLTArabic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue W23 for SKY Reg';
+    src: url('HelveticaNeueW23forSKY-Reg.woff2') format('woff2'),
+        url('HelveticaNeueW23forSKY-Reg.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HelveticaNeueLT Arabic 45';
+    src: url('HelveticaNeueLTArabic-Light.woff2') format('woff2'),
+        url('HelveticaNeueLTArabic-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+}
+

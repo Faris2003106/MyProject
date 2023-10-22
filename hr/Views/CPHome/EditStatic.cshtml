@@ -1,0 +1,54 @@
+﻿@model HomePage
+@{
+    ViewData["Title"] = "Home Page";
+
+
+}
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Amiri&family=Aref+Ruqaa&family=Cairo:wght@200&display=swap" rel="stylesheet">
+
+<h1 style=" font-family: 'Tajawal', sans-serif; text-align: center;">تعديل احصائيات الغرفة</h1>
+
+<br />
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <div clss="row">
+                <form class="forms-sample" asp-action="EditStatic" method="post">
+                    <div class=" col-md-6 grid-margin stretch-card" style="font-family:'Tajawal', sans-serif;">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <div class="form-group">
+                                    <label for="exampleInputName1">رقم ID</label>
+                                    <input type="number" class="form-control" asp-for="StaticId" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">عنوان الاحصائية</label>
+                                    <input type="text" class="form-control" asp-for="StaitcTitle">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">عدد الاحصائيات</label>
+                                    <input type="text" class="form-control" asp-for="StaitcNum">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">إظهار الاحصائية</label>
+                                    <div class="form-check form-check-flat form-check-primary">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" asp-for="status" class="form-check-input">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">حفظ التعديلات</button>
+                    <button type="submit" class="btn btn-danger mr-2"><a asp-action="Index" asp-controller="CPHome" style="color:white"> إلغاء الحفظ</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

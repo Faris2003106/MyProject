@@ -1,0 +1,32 @@
+﻿
+@model RegisterViewModel
+
+@{
+    ViewBag.Title = "User Registration";
+}
+
+<div class="wrapper">
+    <div class="col-md-12">
+        <form method="post" asp-action="Register" asp-controller="home" class="form-signin">
+            <h2 class="form-signin-heading">Please registers </h2>
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Email"></label>
+                <input asp-for="Email" type="text" class="form-control" name="Email" placeholder="Email Address" required="" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Password"></label>
+                <input asp-for="Password" class="form-control" name="password" placeholder="Password" required="" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ConfirmPassword"></label>
+                <input asp-for="ConfirmPassword" class="form-control"  placeholder="ConfirmPassword" required="" />
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-lg btn-primary btn-block">Register</button>
+            <p> هل لديك حساب؟ <span><a asp-action="login" asp-controller="home" target="_blank">تسجيل دخول </a></span></p>
+        </form>
+    </div>
+</div>

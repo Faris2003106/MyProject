@@ -1,0 +1,103 @@
+﻿@model IEnumerable<Honoring>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Amiri&family=Aref+Ruqaa&family=Cairo:wght@200&display=swap" rel="stylesheet">
+
+<h1 style=" font-family: 'Tajawal', sans-serif; text-align: center; color:brown;">تكريم الموظفين</h1>
+
+<form class="form-inline" method="post">
+    <div class="form-group">
+        <div class="input-group">           
+            <form action="@Url.Action("Index", "CPHonoring")" method="get" class="form-inline">
+                <input type="text" name="title" id="Search" class="form-control" placeholder="بحث" />
+                <button id="buttonsubsribe" class="btn btniconB" type="submit">بحث</button>
+            </form>
+            <a href="@Url.Action("Create", "CPHonoring")" class="btn btniconB" style="text-align:center; color:white;">
+                إضافة موظف
+            </a>
+        </div>
+    </div>
+</form>
+<br />
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <table class="table table-bordered" style="font-family:'Tajawal', sans-serif; text-align:center">
+                <thead>
+                    <tr>
+                        <th> رقم ID </th>
+                        <th> اسم الموظف </th>
+                        <th> تاريخ التكريم </th>
+                        <th>  سبب التكريم </th>
+                        <th> صورة الموظف </th>
+                        <th> إظهار </th>
+                        <th> عمليات </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td> @item.Id </td>
+                            <td> @item.Name </td>
+                            <td> @item.CreateDate </td>
+                            <td> @item.Description </td>
+                            <td>
+                                <img src="~/img//honoring/@item.ImageUrl"></img>
+                            </td>                            
+                            <td>
+                                    @Html.CheckBoxFor(modelItem => item.status, new { disabled = "disabled" })
+                            </td>                            
+                            <td>
+                                <button type="submit" class="btn btn-primary mr-2">
+                                    <a asp-action="Edit" asp-controller="CPHonoring" asp-route-id="@item.Id"><span style="color:white"> تعديل</span></a>
+                                </button>   |
+                                <button type="submit" class="btn btn-primary mr-2">
+                                    <a asp-action="delete" asp-controller="CPHonoring" asp-route-id="@item.Id"><span style="color:white"> حذف</span></a>
+                                </button>
+
+                               @*  <form asp-action="delete" asp-route-id="@item.Id">
+                                    <button type="submit" class="btn btn-primary mr-2">
+                                        <i data-toggle="tooltip">حذف</i>
+                                    </button>
+                                </form> *@
+                            </td>
+                        </tr>
+                    }
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade " id="DeleteModel" tabindex="-1" role="dialog" aria-labelledby="DeleteModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">تأكيد الحذف</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="media">
+                    <div class="media-body">
+                        <h5 class="mt-0">هل أنت متأكد من حذف المدينة</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-danger" data-dismiss="modal">حذف</button>&emsp;
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء الحذف</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- partial -->
+<!-- main-panel ends -->
+
+

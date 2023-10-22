@@ -1,0 +1,63 @@
+﻿@model hr.ViewModel.NewsViewModel
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_ControlPanel.cshtml";
+}
+
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Amiri&family=Aref+Ruqaa&family=Cairo:wght@200&display=swap" rel="stylesheet">
+
+<h1 style=" font-family: 'Tajawal', sans-serif; text-align: center;">إضافة خبر </h1>
+
+<br />
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <div clss="row">
+                <form class="forms-sample" asp-action="create" asp-controller="CPNews" method="post" enctype="multipart/form-data">
+                    <div class=" col-md-6 grid-margin stretch-card" style="font-family:'Tajawal', sans-serif;">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="form-group">
+                                    <label>عنوان الخبر</label>
+                                    <input type="text" class="form-control" placeholder="عنوان الخبر" asp-for="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label>تفاصيل الخبر</label>
+                                    <input type="text" class="form-control" placeholder="تفاصيل الخبر" asp-for="Description">
+                                </div>
+                                <div class="form-group">
+                                    <label>تاريخ النشر</label>
+                                    <input type="datetime-local" class="form-control" placeholder="تاريخ النشر" asp-for="CreateDate">
+                                </div>
+                                <div class="form-group">
+                                    <label>رابط الخبر</label>
+                                    <input type="text" class="form-control" placeholder="رابط الخبر" asp-for="NewsUrl">
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Image">صورة الخبر</label>
+                                    <input class="form-control" placeholder="صورة الخبر" asp-for="Image">
+                                </div>
+                                <div class="form-group">
+                                    <label>إظهار </label>
+                                    <div class="form-check form-check-flat form-check-primary">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" asp-for="status" class="form-check-input">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2" value="حفظ">حفظ التعديلات</button>
+                    <button type="submit" class="btn btn-danger mr-2"><a asp-action="Index" asp-controller="CPOffers" style="color:white"> إلغاء التعديلات</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+

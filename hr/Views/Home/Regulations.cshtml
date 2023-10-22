@@ -1,0 +1,164 @@
+﻿@{
+    ViewData["Title"] = "Regulations";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="~/css/Regulations.css" media="all" />
+<style>
+    /* Sidebar */
+    .sidebar{
+        background-color: white;
+        border-radius: 20px;
+        padding: 30px;
+        box-shadow: 5px 7px 5px #888888;
+    }
+    .search-input {
+        width: 100%;
+        border-radius: 20px;
+        padding: 5px 10px;        
+        border: 1px solid gray;
+    }
+    .modal-title{
+        padding: 15px;
+        width: 100%
+    }
+    .modal-title:hover{
+        background-color: #f2f2f2;
+        border-radius: 20px
+    }
+
+    .modal-title a {
+        text-decoration: none;
+        font-weight: bold;
+        color: rgb(48, 52, 110);
+    }
+    .modal-title:active{
+        background-color: rgb(48, 52, 110);
+        color: white;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    
+
+
+    /* Drop Down */
+    .dropbtn {
+        /* background-color: #4CAF50; */
+        color: white;
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+    }
+
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+    }
+
+    .dropdown-content a:hover {
+        background-color: #f1f1f1
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+       /*  background-color: #3e8e41; */
+    }
+    /* Content Section */
+    .title-bloc{
+        padding-right: 20px;    
+    }
+    .title{
+        color: rgb(48, 52, 110);
+        font-weight: bold;
+        font-size: 36px;
+    }
+    /* Left Section*/
+    .content-link{
+        margin-left: 50px;
+        font-size: 13px;
+        color: #7e7e7e
+    }
+    .content-link:hover{
+        color: rgb(48, 52, 110);
+    }
+    .content-item{
+        list-style-type: none;
+    }
+</style>
+<section>
+    <div class="row gy-4 align-items-center" ">
+        <div class="sidebar col-lg-3">
+            <input id="searchInFramework" type="search" class="search-input" placeholder="البحث في الإطار التنظيمي">            
+
+            <div class="bloc-modal-icon">
+                <div class="modal-title">                    
+                    <a href="#">مبادئ الإطار التنظيمي</a>
+                </div>
+            </div>
+                
+            <div class="bloc-modal-icon">
+                <div class="modal-title">
+                    <a href="#">سياسة الحكومة الرقمية</a>
+                </div>
+            </div>
+            <div class="bloc-modal-icon">
+                <div class="dropdown">
+                    <div class="modal-title">
+                        <a href="#" class="dropbtn">السياسة المستمدة</a>
+                    </div>
+                    <div class="dropdown-content">
+                        <ul>
+                            <li><a href="#">الحكومة و الامتثال</a></li>
+                            <li><a href="#">منصات الحكومة الشاملة</a></li>
+                            <li><a href="#">مركز المستفيد</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="col-lg-6">
+            <div class="title-bloc">
+                <h1 class="title">مبادئ الإطار التنظيمي</h1>
+                <p>
+                    يتكون الإطار التنظيمي لأعمال الحكومة الرقمية من ثمانية مبادئ رئيسية بنيت عليها سياسات ومعايير الحكومة الرقمية، وقد تم تطوير مبادئ سياسات ومعايير الحكومة الرقمية بناءً على استبيان الدول الأعضاء في الأمم المتحدة بشأن مؤشر تطور الحكومة الإلكترونية والمبادئ الخاصة بإطار عمل سياسات الحكومة الرقمية (DGPF Principles) الصادر عن منظمة التعاون الاقتصادي والتنمية (OECD).
+                </p>
+                <a href="#" class="btn btn-success">قراءة المزيد</a>
+            </div>
+        </div>
+        <div class="col-lg-3">
+            <h6>محتوى الصفحة</h6>
+            <hr />            
+                <li class="content-item"><a href="#" class="content-link">1.تمهيد</a></li>
+                <li class="content-item"><a href="#" class="content-link">2.مقدمة</a></li>            
+        </div>
+    </div>
+    
+
+</section>

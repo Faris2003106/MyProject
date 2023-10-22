@@ -1,0 +1,55 @@
+﻿@model IdentityUser
+@{
+    ViewData["Title"] = "Home Page";
+
+
+}
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Amiri&family=Aref+Ruqaa&family=Cairo:wght@200&display=swap" rel="stylesheet">
+
+<h1 style=" font-family: 'Tajawal', sans-serif; text-align: center;">تعديل بيانات مستخدم </h1>
+
+<br />
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <div clss="row">
+                <form class="forms-sample" asp-action="Edit" method="post">
+                    <div class=" col-md-6 grid-margin stretch-card" style="font-family:'Tajawal', sans-serif;">
+                        <div class="card">
+                            <div class="card-body">                            
+                                <div class="form-group">
+                                    <label for="exampleInputName1">رقم ID</label>
+                                    <input type="number" class="form-control" asp-for="Id" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">عنوان الفيديو</label>
+                                    <input type="text" class="form-control"  >
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword4">رابط الفيديو</label>
+                                    <input type="date" class="form-control" >
+                                </div>
+                                <div class="form-group">
+                                    <label>موضع الفيديو</label>
+                                    <select id="Type" name="Type" class="form-control">
+                                        <option value="الأعلى">الأعلى</option>
+                                        <option value="الأسفل"> الأسفل</option>                                        
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">حفظ التعديلات</button>
+                    <button type="submit" class="btn btn-danger mr-2"><a class="nav-link" asp-action="Index" asp-controller="CPEvents" style="color:white"> إلغاء الحفظ</a></button>
+                </form>                        
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

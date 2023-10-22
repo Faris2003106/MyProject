@@ -1,0 +1,142 @@
+﻿@model IEnumerable<hr.Models.events>
+    <!-- ======= Blog Section ======= -->
+<section id="blog" class="blog">
+    <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4 posts-list">
+
+            @foreach(var item in Model)
+            {
+                <div class="col-xl-4 col-md-6">
+                    <article>
+
+                        <div class="post-img">
+                            <img src="~/img/events/@item.ImageUrl" alt="100%x280" class="img-fluid home-card" style="width:860; height:445;">
+
+                        </div>
+
+                        <h4 class="card-title">@item.Name</h4>
+                        <h2 class="title">
+                            <a asp-action="eventdetails" asp-controller="Home" asp-route-id="@item.Id">  @item.description </a>
+                        </h2>
+                        <time datetime="2022-01-01">@item.CreateDate</time>
+
+
+                    </article>
+                </div>
+
+                <!-- End post list item -->
+            }
+            </div>
+            </div>
+            </section>
+@*
+            <div class="col-xl-4 col-md-6">
+                <article>
+
+                    <div class="post-img">
+                        <img src="~/assets/img/201.jpeg" alt="" class="img-fluid">
+                    </div>
+
+                    <p class="post-category">البوم العالمي للاطفال</p>
+                    <time datetime="2022-01-01">Jun 5, 2022</time>
+
+                    <h2 class="title">
+                        <a href="blog-details.html">احتفال اليوم العالمي للاطفال</a>
+                    </h2>
+
+                </article>
+            </div><!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6">
+                <article>
+
+                    <div class="post-img">
+                        <img src="~/assets/img/1cta-bg1.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <p class="post-category">يوم الشجرة </p>
+                    <time datetime="2022-01-01">Jun 22, 2022</time>
+
+                    <h2 class="title">
+                        <a href="blog-details.html">احتفال يوم الشجرة العالمي </a>
+                    </h2>
+
+
+                </article>
+            </div><!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6">
+                <article>
+                    <div class="post-img">
+                        <img src="~/assets/img/1cta-bg1.jpg" alt="" class="img-fluid">
+                    </div>
+                    <p class="post-category">يوم الشجرة </p>
+                    <time datetime="2022-01-01">Jun 30, 2022</time>
+                    <h2 class="title">
+                        <a href="blog-details.html">احتفال يوم الشجرة العالمي</a>
+                    </h2>
+                    <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                            <p class="post-author-list"></p>
+
+                            <p class="post-date">
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div><!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6">
+                <article>
+
+                    <div class="post-img">
+                        <img src="~/assets/img/201.jpeg" alt="" class="img-fluid">
+                    </div>
+
+                    <p class="post-category"> اليوم العالمي للاطفال</p>
+                    <time datetime="2022-01-01">Jan 30, 2022</time>
+                    <h2 class="title">
+                        <a href="blog-details.html">احتفال اليوم العالمي للاطفال</a>
+                    </h2>
+
+                    <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                            <p class="post-date">
+                            </p>
+                        </div>
+                    </div>
+
+                </article>
+            </div><!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6">
+                <article>
+
+                    <div class="post-img">
+                        <img src="~/assets/img/mcci2023.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <p class="post-category"> يوم التأسيس</p>
+                    <time datetime="2022-01-01">Feb 14, 2022</time>
+
+
+                    <h2 class="title">
+                        <a href="blog-details.html">الاحتفال يوم التأسيس</a>
+                    </h2>
+
+                    <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                            <p class="post-date">
+                            </p>
+                        </div>
+                    </div>
+
+                </article>
+            </div><!-- End post list item -->*@
+
+        @*</div><!-- End blog posts list -->
+
+
+    </div>
+</section>*@<!-- End Blog Section -->

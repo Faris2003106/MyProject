@@ -1,0 +1,178 @@
+﻿@model IEnumerable<hr.Models.News>
+
+@{
+    ViewData["Title"] = "Event Page";
+}
+<!-- ======= Blog Section ======= -->
+@*<section id="blog" class="blog" >
+    <div class="container" data-aos="fade-up">
+        @foreach (var item in Model)
+{
+        <div class="row gy-4 posts-list">
+
+            <div class="col-xl-4 col-md-6">
+                <article>
+
+                    <div class="post-img">
+                        <img src="~/assets/img/blog/blog-1.jpg" alt="" class="img-fluid">
+                    </div>
+
+                        <time datetime="2022-01-01">@item.CreateDate.ToString("dd/MM/yyyy")</time>
+
+
+                    <h2 class="title">
+                            <a href="blog-details.html">  @item.Name </a>
+                    </h2>
+
+
+
+                </article>
+            </div><!-- End post list item -->
+        </div>
+
+<!-- End Blog Section -->
+
+}
+    </div>
+</section>
+*@
+
+
+<section id="blog" class="blog"  >
+    <div class="container" data-aos="fade-up" >
+
+        <div class="row gy-4 posts-list">
+
+            @foreach (var item in Model)
+            {
+                <div class="col-xl-4 col-md-6" >
+                    <article>
+
+                        <div class="post-img">
+                            <img src="~/img/news/@item.ImageUrl" alt="" class="img-fluid" style="width: 679px; height: 250px;">
+
+                        </div>
+
+                        <p class="post-category">@item.Name</p>
+                        <time datetime="2022-01-01">@item.CreateDate.ToString("dd/MM/yyyy")</time>
+
+
+                        <h2 class="title">
+                            <a asp-action="pdetails" asp-controller="Home" asp-route-id="@item.Id">  @item.Description </a>
+                        </h2>
+
+
+
+
+                    </article>
+                </div>
+
+                <!-- End post list item -->
+            }
+        </div>
+    </div>
+</section>
+
+
+@*            <div class="col-xl-4 col-md-6">
+                <article>
+
+                    <div class="post-img">
+                        <img src="~/assets/img/blog/blog-2.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <time datetime="2022-01-01">Jun 5, 2022</time>
+
+                    <h2 class="title">
+                        <a href="blog-details.html">  اسم الخبر</a>
+                    </h2>
+
+                </article>
+            </div><!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6">
+                <article>
+
+                    <div class="post-img">
+                        <img src="~/assets/img/blog/blog-3.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <time datetime="2022-01-01">Jun 22, 2022</time>
+
+                    <h2 class="title">
+                        <a href="blog-details.html">  اسم الخبر</a>
+                    </h2>
+
+
+                </article>
+            </div><!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6">
+                <article>
+                    <div class="post-img">
+                        <img src="~/assets/img/blog/blog-4.jpg" alt="" class="img-fluid">
+                    </div>
+                    <time datetime="2022-01-01">Jun 30, 2022</time>
+                    <h2 class="title">
+                        <a href="blog-details.html">  اسم الخبر</a>
+                    </h2>
+                    <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                            <p class="post-author-list"></p>
+
+                            <p class="post-date">
+                            </p>
+                        </div>
+                    </div>
+                </article>
+            </div><!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6">
+                <article>
+
+                    <div class="post-img">
+                        <img src="~/assets/img/blog/blog-5.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <time datetime="2022-01-01">Jan 30, 2022</time>
+                    <h2 class="title">
+                        <a href="blog-details.html">  اسم الخبر</a>
+                    </h2>
+
+                    <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                            <p class="post-date">
+                            </p>
+                        </div>
+                    </div>
+
+                </article>
+            </div><!-- End post list item -->
+
+            <div class="col-xl-4 col-md-6">
+                <article>
+
+                    <div class="post-img">
+                        <img src="~/assets/img/blog/blog-6.jpg" alt="" class="img-fluid">
+                    </div>
+
+                    <time datetime="2022-01-01">Feb 14, 2022</time>
+
+
+                    <h2 class="title">
+                        <a href="blog-details.html">  اسم الخبر</a>
+                    </h2>
+
+                    <div class="d-flex align-items-center">
+                        <div class="post-meta">
+                            <p class="post-date">
+                            </p>
+                        </div>
+                    </div>
+
+                </article>
+            </div><!-- End post list item -->
+
+        </div><!-- End blog posts list -->
+*@
+

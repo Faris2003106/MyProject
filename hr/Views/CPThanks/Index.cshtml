@@ -1,0 +1,103 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_ControlPanel.cshtml";
+}
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Amiri&family=Aref+Ruqaa&family=Cairo:wght@200&display=swap" rel="stylesheet">
+
+<h1 style=" font-family: 'Tajawal', sans-serif; text-align: center; color:brown;">جوائز وشهادات الغرفة</h1>
+
+<form class="form-inline" method="post">
+    <div class="form-group">
+        <div class="input-group">
+            <select id="Type" name="Type" class="form-control">
+                <option value="1">شهادة شكر</option>
+                <option value="2">درع تكريم</option>
+            </select>&ensp;
+            <input type="text" name="Search" id="Search" class="form-control" placeholder="بحث">&ensp;
+            <button id="buttonsubsribe" class="btn btniconB" type="submit">بحث</button> &ensp;
+            <button id="buttonsubsribe" class="btn btniconB" type="submit"><a asp-action="Create" asp-controller="CPThanks" style="text-align:center ; color : white ;">إضافة جوائز </a> </button> &ensp;
+        </div>
+    </div>
+</form>
+<br />
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            @*<h4 class="card-title">Bordered table</h4>
+            <p class="card-description">
+            Add class <code>.table-bordered</code>
+            </p>*@
+            <table class="table table-bordered" style="font-family:'Tajawal', sans-serif; text-align:center">
+                <thead>
+                    <tr>
+                        <th> # </th>
+                        <th> رقم ID </th>
+                        <th> اسم الجهة </th>
+                        <th> تاريخ الجائزة </th>
+                        <th> صورة الجائزة </th>
+                        <th> نوع الجائزة </th>
+                        <th> إظهار </th>
+                        <th> عمليات </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> 1 </td>
+                        <td> 65412 </td>
+                        <td> اجتماع </td>
+                        <td> May 15, 2015 </td>
+                        <td>
+                            <img src="assets/images/mcci2023.jpg"></img>
+                        </td>
+                        <td>شهادة شكر </td>
+                        <td>
+                            <div class="form-check form-check-flat form-check-primary">
+                                <label class="form-check-label">
+                                    <input type="checkbox" class="form-check-input">
+                                </label>
+                            </div>
+                        </td>
+                        <td>
+                            <button type="submit" class="btn btn-primary mr-2">
+                                <a asp-action="Edit" asp-controller="CPThanks"><span style="color:white"> تعديل</span></a>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade " id="DeleteModel" tabindex="-1" role="dialog" aria-labelledby="DeleteModal" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">تأكيد الحذف</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="media">
+                    <div class="media-body">
+                        <h5 class="mt-0">هل أنت متأكد من حذف المدينة</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+
+                <button type="button" class="btn btn-danger" data-dismiss="modal">حذف</button>&emsp;
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">إلغاء الحذف</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- partial -->
+<!-- main-panel ends -->

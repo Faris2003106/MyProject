@@ -1,0 +1,93 @@
+﻿@model IEnumerable<hr.Models.Courses>
+
+@{
+    ViewData["Title"] = "Event Page";
+}
+<section id="services" class="services sections-bg">
+    <div class="container" data-aos="fade-up">
+        <div class="section-header">
+            <h2 style="font-family: 'Cairo', sans-serif;" pading="80px">
+                الدورات
+            </h2>
+            <h4 style="font-family: 'Cairo', sans-serif; color:cadetblue">مجموعة من الخدمات التي من خلالها يستطيع الموظف التطوير من اداء عمله والاستفادة منها بشكل شخصي</h4>
+        </div>
+        <div class="row gy-4 " data-aos="fade-up" data-aos-delay="100">
+            @foreach (var item in Model)
+            {
+
+
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item position-relative">
+                        <div class="icon">
+                            <i class="bi bi-easel"></i>
+                        </div>
+                        <h3>@item.Name</h3>
+                        <p>@item.description</p>
+                        <a href="@item.RegisterLink" target="_blank" class="readmore stretched-link">للتسجيل في الدورة <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </div>
+
+
+
+            }
+        </div>
+</section>
+<!-- End Service Item -->
+@*            <div class="col-lg-4 col-md-6">
+                <div class="service-item  position-relative">
+                    <div class="icon">
+                        <i class="bi bi-activity"></i>
+                    </div>
+                    <h3>دورة تصميم الفوتوشوب</h3>
+                    <p>يقدم مركز كككمنيب  كمسل كمستل كمنسيب ممن سيب منتبس منتسيبه مسيبمن منت ىسمينبت مىمسنيتب نته من تكن تسمينبك منسكيمب تكمنكيبم نخنكسميب كم نكم تسيكمبن كمنسيب .</p>
+                    <a asp-action="pdetails" asp-controller="Home" target="_blank" class="readmore stretched-link">للتسجيل في الدورة <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item position-relative">
+                    <div class="icon">
+                        <i class="bi bi-broadcast"></i>
+                    </div>
+                    <h3>دورة تصميم الفوتوشوب</h3>
+                    <p>يقدم مركز كككمنيب  كمسل كمستل كمنسيب ممن سيب منتبس منتسيبه مسيبمن منت ىسمينبت مىمسنيتب نته من تكن تسمينبك منسكيمب تكمنكيبم نخنكسميب كم نكم تسيكمبن كمنسيب .</p>
+                    <a asp-action="pdetails" asp-controller="Home" target="_blank" class="readmore stretched-link">للتسجيل في الدورة <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item position-relative">
+                    <div class="icon">
+                        <i class="bi bi-bounding-box-circles"></i>
+                    </div>
+                    <h3>دورة تصميم الفوتوشوب</h3>
+                    <p>يقدم مركز كككمنيب  كمسل كمستل كمنسيب ممن سيب منتبس منتسيبه مسيبمن منت ىسمينبت مىمسنيتب نته من تكن تسمينبك منسكيمب تكمنكيبم نخنكسميب كم نكم تسيكمبن كمنسيب .</p>
+                    <a asp-action="pdetails" asp-controller="Home" target="_blank" class="readmore stretched-link">للتسجيل في الدورة <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div><!-- End Service Item -->
+
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item position-relative">
+                    <div class="icon">
+                        <i class="bi bi-calendar4-week"></i>
+                    </div>
+                    <h3>دورة تصميم الفوتوشوب</h3>
+                    <p>يقدم مركز كككمنيب  كمسل كمستل كمنسيب ممن سيب منتبس منتسيبه مسيبمن منت ىسمينبت مىمسنيتب نته من تكن تسمينبك منسكيمب تكمنكيبم نخنكسميب كم نكم تسيكمبن كمنسيب .</p>
+                    <a asp-action="pdetails" asp-controller="Home" target="_blank" class="readmore stretched-link">للتسجيل في الدورة <i class="bi bi-arrow-right"></i></a>
+                </div>
+            </div><!-- End Service Item -->
+            <div class="col-lg-4 col-md-6">
+
+
+
+                <div class="service-item position-relative">
+                    <div class="icon">
+                        <i class="bi bi-chat-square-text"></i>
+                    </div>
+                    <h3>دورة تصميم الفوتوشوب</h3>
+                    <p>يقدم مركز كككمنيب  كمسل كمستل كمنسيب ممن سيب منتبس منتسيبه مسيبمن منت ىسمينبت مىمسنيتب نته من تكن تسمينبك منسكيمب تكمنكيبم نخنكسميب كم نكم تسيكمبن كمنسيب .</p>
+                    <a asp-action="pdetails" asp-controller="Home" target="_blank" class="readmore stretched-link">للتسجيل في الدورة <i class="bi bi-arrow-right"></i></a>
+                </div>
+
+            </div><!-- End Service Item -->
+        </div>
+*@   

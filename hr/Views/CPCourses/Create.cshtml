@@ -1,0 +1,78 @@
+﻿@model hr.ViewModel.CoursesViewModel
+@{
+    ViewData["Title"] = "Home Page";
+
+
+}
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Amiri&family=Aref+Ruqaa&family=Cairo:wght@200&display=swap" rel="stylesheet">
+
+<h1 style=" font-family: 'Tajawal', sans-serif; text-align: center;">إضافة دورة </h1>
+
+<br />
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <div clss="row">
+                <form class="forms-sample" asp-action="create" asp-controller="CPCourses" method="post" enctype="multipart/form-data">
+                    @if (ViewBag.Message != null)
+                    {
+                        <div class="alert alert-danger" role="alert">
+
+                            <h6>@ViewBag.Message</h6>
+
+                        </div>
+                    }
+
+                    <div class=" col-md-6 grid-margin stretch-card" style="font-family:'Tajawal', sans-serif;">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <div class="form-group">
+                                    <label>عنوان الدورة</label>
+                                    <input type="text" class="form-control" placeholder="عنوان الدورة" asp-for="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label>تاريخ الدورة</label>
+                                    <input type="datetime-local" class="form-control" placeholder="تاريخ الدورة" asp-for="CourseDate">
+                                </div>
+                                <div class="form-group">
+                                    <label>الجهة المنظمة</label>
+                                    <input type="text" class="form-control" placeholder="الجهة المنظمة" asp-for="Organization">
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Image">شعار الجهة</label>
+                                    <input class="form-control" placeholder="شعار الجهة" asp-for="Image">
+                                </div>
+                                <div class="form-group">
+                                    <label>رابط التسجيل</label>
+                                    <input type="text" class="form-control" placeholder="رابط التسجيل" asp-for="RegisterLink">
+                                </div>
+                                <div class="form-group">
+                                    <label>تفاصيل الدورة</label>
+                                    <input type="text" class="form-control" placeholder="تفا صيل الدورة" asp-for="description">
+                                </div>
+                                <div class="form-group">
+                                    <label>إظهار الدورة</label>
+                                    <div class="form-check form-check-flat form-check-primary">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" asp-for="status" class="form-check-input">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2" value="حفظ">حفظ التعديلات</button>
+                    <button type="submit" class="btn btn-danger mr-2"><a asp-action="Index" asp-controller="CPCourses" style="color:white"> إلغاء التعديلات</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

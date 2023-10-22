@@ -1,0 +1,167 @@
+﻿@inject SignInManager<IdentityUser> SignInManager;
+<!DOCTYPE html>
+<html lang="ar-sa" dir="rtl">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>غرفة المدينة-التواصل الداخلي</title>
+
+    <!-- Favicons -->
+    <link href="~/assets/img/mcci.jpg" rel="icon">
+    <link href="~/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="~/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="~/assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="~/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="~/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css' rel='stylesheet'>
+    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.3/css/font-awesome.css' rel='stylesheet'>
+    <style></style>
+    <script type='text/javascript' src=''></script>
+    <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js'></script>
+    <script type='text/javascript' src='https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js'></script>
+
+
+    <!-- Template Main CSS File -->
+    <link href="~/assets/css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Cairo&family=Noto+Kufi+Arabic:wght@300&family=Tajawal:wght@300&display=swap" rel="stylesheet">
+
+    <!-- Vendor JS Files -->
+    <script src="~/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="~/assets/vendor/aos/aos.js"></script>
+    <script src="~/assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="~/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+    <script src="~/assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="~/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="~/assets/vendor/php-email-form/validate.js"></script>
+
+    <!-- Template Main JS File -->
+    <script src="~/assets/js/main.js"></script>
+    <script type='text/javascript'></script>
+
+</head>
+<body>
+   @* new head*@
+
+    <div class="topnav header d-flex align-items-center" id="myTopnav">
+@*        <div class="container-fluid container-xl d-flex align-items-center justify-content-between">*@
+        <img src="../assets/img/mcci.png" asp-action="index" asp-controller="Home" target="_ blank" class="imgnv">
+@*    <a href="index.html" class="logo d-flex align-items-center1">
+*@                    <!--Uncomment the line below if you also wish to use an image logo-->
+@*                </a>*@
+@*        </div>*@
+
+        <a asp-action="index" asp-controller="Home" style="font-family: 'Almarai', sans-serif; ">الرئيسية</a>
+        <a asp-action ="event" asp-controller="Home" style="font-family: 'Almarai', sans-serif;" > الفعاليات</a>
+        <a asp-action ="discounts" asp-controller="Home" style="font-family: 'Almarai', sans-serif;">  الخصومات</a>
+        <a asp-action="Courses" asp-controller="Home" style="font-family: 'Almarai', sans-serif; ">الدورات</a>
+        <a  asp-action="news" asp-controller="Home" style="font-family: 'Almarai', sans-serif; ">الاخبار</a>
+        <a asp-action="training" asp-controller="Home" style="font-family: 'Almarai', sans-serif; ">التواصل</a>
+        <a asp-action="Regulations" asp-controller="Home" style="font-family: 'Almarai', sans-serif; ">اللوائح</a>
+        @if (SignInManager.IsSignedIn(User))
+        {
+
+                @* <form method="post" asp-controller="home" asp-action="logout">
+                    <button type="submit" style="width:auto"
+                        class="nav-link btn btn-link py-0">
+                    Logout @User.Identity.Name
+                </button>
+                </form> *@
+
+        }
+        else
+        {
+
+                <a class="nav-link" asp-controller="Account" asp-action="Login"  style="font-family: 'Almarai', sans-serif;" >
+                    تسجيل
+                </a>
+
+        }
+        
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+<!-- End Header -->
+    <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" asp-controller="home" asp-action="index">List</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" asp-controller="home" asp-action="create">Create</a>
+        </li>
+    </ul>
+        <ul class="navbar-nav ml-auto"></ul>
+    </div>
+
+    <div >
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
+
+        <div class="container">
+            <div class="footer-center">
+                <div class="social-links d-flex mt-4 text-center">
+                    <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+                    <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+                </div>
+
+
+
+            </div>
+        </div>
+
+        <div class="container mt-4">
+            <div class="copyright">
+                جميع الحقوق محفوظة لغرفة المدينة المنورة &copy; 2023
+            </div>
+            <div class="credits">
+               <a> إدارة تقنية المعلومات - قسم البرمجة</a>
+            </div>
+        </div>
+
+
+    </footer><!-- End Footer -->
+
+
+
+</body>
+
+</html>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+@await RenderSectionAsync("Scripts", required: false)

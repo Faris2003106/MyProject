@@ -1,0 +1,67 @@
+﻿@model hr.ViewModel.HonoringViewModel
+@{
+    ViewData["Title"] = "Create";
+    Layout = "~/Views/Shared/_ControlPanel.cshtml";
+}
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Amiri&family=Aref+Ruqaa&family=Cairo:wght@200&display=swap" rel="stylesheet">
+
+<h1 style=" font-family: 'Tajawal', sans-serif; text-align: center;">إضافة تكريم لموظف </h1>
+
+<br />
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <div clss="row">
+                <form class="forms-sample" asp-action="create" asp-controller="CPHonoring" method="post" enctype="multipart/form-data">
+                    @if (ViewBag.Message != null)
+                    {
+                        <div class="alert alert-danger" role="alert">
+
+                            <h6>@ViewBag.Message</h6>
+
+                        </div>
+                    }
+                    <div class=" col-md-6 grid-margin stretch-card" style="font-family:'Tajawal', sans-serif;">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <div class="form-group">
+                                    <label>اسم الموظف</label>
+                                    <input type="text" class="form-control" placeholder="اسم الموظف" asp-for="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label>تاريخ التكريم</label>
+                                    <input type="datetime-local" class="form-control" placeholder="تاريخ التكريم" asp-for="CreateDate">
+                                </div>
+                                <div class="form-group">
+                                    <label>سبب التكريم</label>
+                                    <input type="text" class="form-control" placeholder="سبب التكريم" asp-for="Description">
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Image">صورة الموظف</label>
+                                    <input class="form-control" placeholder="صورة الموظف" asp-for="Image">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">إظهار </label>
+                                    <div class="form-check form-check-flat form-check-primary">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" asp-for="status" class="form-check-input">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2" value="حفظ">حفظ التعديلات</button>
+                    <button type="submit" class="btn btn-danger mr-2"><a asp-action="Index" asp-controller="CPHonoring" style="color:white"> إلغاء التعديلات</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

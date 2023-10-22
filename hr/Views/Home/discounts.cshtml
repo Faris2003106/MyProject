@@ -1,0 +1,120 @@
+﻿@model IEnumerable<hr.Models.Discounts>
+
+@{
+    ViewData["Title"] = "discounts Page";
+}
+
+<section id="team" class="team">
+    <div class="row gy-4">
+        @foreach (var item in Model)
+        {
+            <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                <div class="member">
+                    <img src="~/img/discounts/@item.ImageUrl" class="img-fluid" alt="" style="width: 350px; height: 350px;">
+                    <h4>@item.Name</h4>
+                    <span style="font-family: 'Cairo', sans-serif;">@item.description</span>
+                    @if (!string.IsNullOrEmpty(item.TwitterUrl) || !string.IsNullOrEmpty(item.FacebookUrl) || !string.IsNullOrEmpty(item.InsatgramUrl) || !string.IsNullOrEmpty(item.SnapchatUrl))
+                    {
+                        <div class="social">
+                            @if (!string.IsNullOrEmpty(item.TwitterUrl))
+                            {
+                                <a href="@item.TwitterUrl" target="_blank"><i class="bi bi-twitter"></i></a>
+                            }
+                            @if (!string.IsNullOrEmpty(item.FacebookUrl))
+                            {
+                                <a href="@item.FacebookUrl" target="_blank"><i class="bi bi-facebook"></i></a>
+                            }
+                            @if (!string.IsNullOrEmpty(item.InsatgramUrl))
+                            {
+                                <a href="@item.InsatgramUrl" target="_blank"><i class="bi bi-instagram"></i></a>
+                            }
+                            @if (!string.IsNullOrEmpty(item.SnapchatUrl))
+                            {
+                                <a href="@item.SnapchatUrl" target="_blank"><i class="bi bi-snapchat"></i></a>
+                            }
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <!-- End Team Member -->
+        }
+
+    </div>
+</section>
+
+
+
+
+
+
+@* <div class="content">
+   
+        @foreach (var item in Model)
+        {
+        <a class="carddis" href="#!">
+            <div class="front">
+                <img src="~/assets/img/offers/@item.ImageUrl" alt="" class="img-fluidc">
+            </div>
+            <div class="back">
+                <div>
+                    <p>@item.Name</p>
+                    <p>  @item.description</p>
+                </div>
+            </div>
+            </a>
+        }
+    
+</div> *@
+@*    </a><a class="carddis" href="#!">
+        <div class="front">
+            <img src="~/assets/img/2323.jfif" alt="" class="img-fluidc">
+        </div>
+        <div class="back">
+            <div>
+                <p>mcdonalds</p>
+                <p>مجموعة مطاعم ماكدونالدز</p>
+            </div>
+        </div>
+    </a><a class="carddis" href="#!">
+        <div class="front">
+            <img src="~/assets/img/2323.jfif" alt="" class="img-fluidc">
+        </div>
+        <div class="back">
+            <div>
+                <p>mcdonalds</p>
+                <p>مجموعة مطاعم ماكدونالدز</p>
+            </div>
+        </div>
+    </a><a class="carddis" href="#!">
+        <div class="front">
+            <img src="~/assets/img/2323.jfif" alt="" class="img-fluidc">
+        </div>
+        <div class="back">
+            <div>
+                <p>mcdonalds</p>
+                <p>مجموعة مطاعم ماكدونالدز</p>
+            </div>
+        </div>
+    </a><a class="carddis" href="#!">
+        <div class="front">
+            <img src="~/assets/img/2323.jfif" alt="" class="img-fluidc">
+        </div>
+        <div class="back">
+            <div>
+                <p>mcdonalds</p>
+                <p>مجموعة مطاعم ماكدونالدز</p>
+            </div>
+        </div>
+    </a><a class="carddis" href="#!">
+        <div class="front">
+            <img src="~/assets/img/2323.jfif" alt="" class="img-fluidc">
+        </div>
+        <div class="back">
+            <div>
+                <p>mcdonalds</p>
+                <p>مجموعة مطاعم ماكدونالدز</p>
+            </div>
+        </div>
+    </a>
+*@

@@ -1,0 +1,408 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = hr
+build_property.RootNamespace = hr
+build_property.ProjectDir = C:\Users\Fahad Sindi\Desktop\Projects\hr\hr\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Fahad Sindi\Desktop\Projects\hr\hr
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Account/AddUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBZGRVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Account/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxVc2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Categories/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Categories/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Categories/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Categories/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Categories/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Contacts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Contacts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Contacts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Contacts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Contacts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/ControlPanel/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJvbFBhbmVsXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/ControlPanel/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udHJvbFBhbmVsXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Courses/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Courses/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Courses/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Courses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Courses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cnNlc1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPAddUser/AddUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BBZGRVc2VyXEFkZFVzZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPAddUser/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BBZGRVc2VyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPAddUser/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BBZGRVc2VyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPAddUser/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BBZGRVc2VyXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPCourses/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BDb3Vyc2VzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPCourses/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BDb3Vyc2VzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPCourses/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BDb3Vyc2VzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPCourses/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BDb3Vyc2VzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPEvents/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BFdmVudHNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPEvents/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BFdmVudHNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPEvents/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BFdmVudHNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPEvents/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BFdmVudHNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPHome/AddStats.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BIb21lXEFkZFN0YXRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPHome/EditStatic.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BIb21lXEVkaXRTdGF0aWMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPHome/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BIb21lXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPHome/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BIb21lXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPHonoring/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BIb25vcmluZ1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPHonoring/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BIb25vcmluZ1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPHonoring/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BIb25vcmluZ1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPHonoring/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BIb25vcmluZ1xfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPNews/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BOZXdzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPNews/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BOZXdzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPNews/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BOZXdzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPNews/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BOZXdzXF9WaWV3U3RhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPOffers/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BPZmZlcnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPOffers/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BPZmZlcnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPOffers/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BPZmZlcnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPOffers/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BPZmZlcnNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPPublications/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BQdWJsaWNhdGlvbnNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPPublications/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BQdWJsaWNhdGlvbnNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPPublications/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BQdWJsaWNhdGlvbnNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPPublications/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BQdWJsaWNhdGlvbnNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPThanks/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BUaGFua3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPThanks/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BUaGFua3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPThanks/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BUaGFua3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPThanks/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BUaGFua3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPVideos/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BWaWRlb3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPVideos/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BWaWRlb3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPVideos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BWaWRlb3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/CPVideos/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ1BWaWRlb3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Discounts/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY291bnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Discounts/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY291bnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Discounts/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY291bnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Discounts/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY291bnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Discounts/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGlzY291bnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/events/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZXZlbnRzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/events/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZXZlbnRzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/events/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZXZlbnRzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/events/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZXZlbnRzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/events/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcZXZlbnRzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Home/Courses.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxDb3Vyc2VzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Home/discounts.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxkaXNjb3VudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Home/Event.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxFdmVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Home/eventdetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxldmVudGRldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Home/Honoring.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb25vcmluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Home/login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Home/news.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxuZXdzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Home/Pdetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQZGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Home/register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxyZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Home/Regulations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWd1bGF0aW9ucy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Home/Training.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxUcmFpbmluZy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Honorings/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9ub3JpbmdzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Honorings/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9ub3JpbmdzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Honorings/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9ub3JpbmdzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Honorings/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9ub3JpbmdzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Honorings/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9ub3JpbmdzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/News/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/News/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/News/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/News/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/News/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTmV3c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Shared/_ControlPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db250cm9sUGFuZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fahad Sindi/Desktop/Projects/hr/hr/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-ntw3n19dm9

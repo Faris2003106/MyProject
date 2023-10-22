@@ -1,0 +1,435 @@
+﻿@model hr.ViewModel.VMHome
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="hero" style="background-color: #e2e6d8;  ">
+    <div class="container position-relative">
+        <div class="row gy-5" data-aos="fade-in">
+            <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
+                <h2 style="font-family: 'Tajawal', sans-serif; text-align:center;">مرحباً بكم بقسم  <span>التواصل الداخلي</span></h2>
+                <p style="font-family: 'Tajawal', sans-serif; text-align:center;"> خاص بإدارة الموارد البشرية بغرفة المدينة</p>
+                <div class="d-flex justify-content-center justify-content-lg-start" style="font-family: 'Tajawal', sans-serif; text-align:center;">
+                    <!--<a href="#about" class="btn-get-started">تصفح الموقع</a>-->
+
+
+                    <a href="@Model.videos.Where(s=>s.VideoPosition =="الأعلى").SingleOrDefault().VideoLink;" class="glightbox btn-watch-video d-flex align-items-center">
+                        <i class="bi bi-play-circle"></i>
+                        <span>&emsp;مشاهدة الفيديو</span>
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-lg-6 order-1 order-lg-2">
+                <img src="assets/img/111.png" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+            </div>
+        </div>
+    </div>
+
+    <div class="icon-boxes position-relative">
+        <div class="container position-relative">
+            <div class="row gy-4 mt-5">
+
+                <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="icon-box" style="background-color: #003366; ">
+                        <div class="icon"><i class="bi bi-easel"></i></div>
+                        <h4 class="title"><a asp-action="event" asp-controller="Home" class="stretched-link">كافة الفعاليات</a></h4>
+                    </div>
+                </div>
+                <!--End Icon Box -->
+
+                <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="icon-box" style="background-color: #003366;  ">
+                        <div class="icon"><i class="bi bi-gem"></i></div>
+                        <h4 class="title"><a asp-action="discounts" asp-controller="Home" class="stretched-link">الخصومات</a></h4>
+                    </div>
+                </div>
+                <!--End Icon Box -->
+
+                <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="icon-box" style="background-color: #003366;  ">
+                        <div class="icon"><i class="bi bi-geo-alt"></i></div>
+                        <h4 class="title"><a asp-action="Courses" asp-controller="Home" class="stretched-link">الدورات</a></h4>
+                    </div>
+                </div>
+                <!--End Icon Box -->
+
+                <div class="col-xl-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+                    <div class="icon-box" style="background-color: #003366; ">
+                        <div class="icon"><i class="bi bi-command"></i></div>
+                        <h4 class="title"><a asp-action="news" asp-controller="Home" class="stretched-link">الأخبار</a></h4>
+                    </div>
+                </div>
+                <!--End Icon Box -->
+
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- End Hero Section -->
+<!-- ======= About Us Section ======= -->
+<section id="about" class="about pt-5 pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h3 class="mb-3">الفعاليات </h3>
+            </div>
+            @* <div class="col-6 text-left">
+            <a class="btn btn-primary mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="next">
+            <i class="fa fa-arrow-right"></i>
+            </a>
+            <a class="btn btn-primary mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="prev">
+            <i class="fa fa-arrow-left"></i>
+            </a>
+            </div> *@
+
+            <div class="col-12">
+                <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
+
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row">
+                                @foreach (var item in Model.events)
+                                {
+                                    <div class="col-md-4 mb-3">
+                                        <div class="card">
+                                            <img class="img-fluid home-card" alt="100%x280" src="~/img/events/@item.ImageUrl" style="width:860; height:445;">
+                                            <div class="card-body">
+                                                <h4 class="title">
+                                                    <a asp-action="eventdetails" asp-controller="Home" asp-route-id="@item.Id">  @item.Name </a>
+                                                </h4>
+                                                @if (item.description != null)
+                                                {
+                                                    @((item.description.Length > 40) ? item.description.Substring(0, 40) + "..." : item.description)
+                                                }
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                }
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div class="d-grid gap-2 col-2 mx-auto mt-2">
+        <a asp-action="event" asp-controller="Home" class="btn btn-success" type="button">المزيد من الفعاليات</a>
+    </div>
+</section><!-- End About Us Section-->
+<br />
+
+<div class="section-header">
+    <h2 style="font-family: 'Cairo', sans-serif;">احصائيات الغرفة</h2>
+</div>
+<section id="stats-counter" class="stats-counter">
+    <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4 align-items-center">
+
+            <div class="col-lg-6">
+                <img src="assets/img/112.png" alt="" class="img-fluid">
+            </div>
+
+            <div class="col-lg-6">
+                @foreach (var item in Model.statics)
+                {
+                    <div class="stats-item d-flex align-items-center">
+                        <span data-purecounter-start="0" data-purecounter-end="@item.StaitcNum" data-purecounter-duration="1" class="purecounter"></span>
+                        <h3 style="font-family: 'Tajawal', sans-serif;">@item.StaitcTitle </h3>
+                    </div>
+
+                    <!-- End Stats Item -->
+                }
+
+
+            </div>
+
+        </div>
+
+    </div>
+</section><!-- End Stats Counter Section -->
+<!-- ======= Call To Action Section ======= -->
+<section id="call-to-action" class="call-to-action">
+    <div class="container text-center" data-aos="zoom-out">
+        <a href="@Model.videos.Where(s=>s.VideoPosition =="الأسفل").SingleOrDefault().VideoLink;" class="glightbox play-btn"></a>
+        <h3>@Model.videos.Where(s=>s.VideoPosition =="الأسفل").SingleOrDefault().VideoTitle</h3>
+        <h4 style="font-family: 'Cairo', sans-serif; color:cadetblue">
+            برعاية كريمة وتشريف من صاحب السمو الملكي الأمير فيصل بن سلمان بن عبد العزيز آل سعود - حفظه الله - تم تدشين مبنى غرفة المدينة المنورة الجديد والاحتفال بمرور 55عام على تأسيسها
+        </h4>
+        <!--<a class="cta-btn" href="#">Call To Action</a>-->
+    </div>
+</section><!-- End Call To Action Section -->
+<!-- ======= Our Services Section ======= -->
+<section id="services" class="services sections-bg">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+            <h2 style="font-family: 'Cairo', sans-serif;">الدورات</h2>
+            <h4 style="font-family: 'Cairo', sans-serif; color:cadetblue">مجموعة من الخدمات التي من خلالها يستطيع الموظف التطوير من اداء عمله والاستفادة منها بشكل شخصي</h4>
+        </div>
+
+        <div class="row gy-4" data-aos="fade-up" data-aos-delay="100">            
+                @foreach (var item in Model.courses)
+                {
+                    <div class="col-lg-4 col-md-6">
+                        <div class="service-item position-relative">
+                            @if(item.OrganizationLogoUrl == null){
+                            <div class="icon">
+                                <i class="bi bi-easel"></i>
+                            </div>
+                        }
+                        @if(item.OrganizationLogoUrl != null)
+                        {
+                            <img src="~/img/courses/@item.OrganizationLogoUrl" id="logo" class="testimonial-img flex-shrink-0" style="width: 100px; height: 100px; display: block;">
+                        }
+                        
+                        <h3>@item.Name</h3>
+                            <p class="card-text">
+                                @if (item.description != null)
+                                {
+                                    @((item.description.Length > 100) ? item.description.Substring(0, 100) + "..." : item.description
+                                        )
+                                }
+                            </p>
+                        
+                            <a href="@item.RegisterLink" target="_blank" class="readmore stretched-link">للتسجيل في الدورة <i class="bi bi-arrow-right"></i></a>
+                        
+                        
+                    </div>
+                    </div>
+                
+
+                <!-- End Service Item -->
+                }
+
+
+
+
+        </div><!-- End Service Item -->
+
+    </div>
+
+</section><!-- End Our Services Section -->
+<div class="d-grid gap-2 col-2 mx-auto mt-2">
+    <a asp-action="Courses" asp-controller="Home" class="btn btn-success" type="button">المزيد من الدورات  </a>
+</div>
+<!-- ======= Testimonials Section ======= -->
+<section id="testimonials" class="testimonials">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+            <h2 style="font-family: 'Cairo', sans-serif;">تكريم الموظفين</h2>
+            <h4 style="font-family: 'Cairo', sans-serif; color:cadetblue"> </h4>
+        </div>
+
+        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+                @foreach (var item in Model.honoring)
+                {
+                    <div class="swiper-slide">
+                        <div class="testimonial-wrap">
+                            <div class="testimonial-item">
+                                <div class="d-flex align-items-center">
+                                    <img src="~/img/honoring/@item.ImageUrl" class="testimonial-img flex-shrink-0" alt="" style="width: 100px; height: 100px;">
+                                    <div>
+                                        <h3>@item.Name</h3>
+
+                                        <p>@item.Description</p>
+                                        <time datetime="">@item.CreateDate</time>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End testimonial item -->
+                }
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section><!-- End Testimonials Section -->
+<!-- ======= Portfolio Section ======= -->
+<div class="d-grid gap-2 col-2 mx-auto mt-2">
+    <a asp-action="honoring" asp-controller="Home" class="btn btn-success" type="button">المزيد </a>
+</div>
+
+<!--Publications Section-->
+<section id="portfolio" class="portfolio sections-bg">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+            <h2 style="font-family: 'Cairo', sans-serif;">إصدارات الادارة</h2>
+            <h4 style="font-family: 'Cairo', sans-serif; color:cadetblue"> إصدرات متنوعة من الادارة  إصدرات متنوعة من الادارة إصدرات متنوعة من الادارة إصدرات متنوعة من الادارة </h4>
+        </div>
+
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+
+            <div>
+                <ul class="portfolio-flters">
+                    <li data-filter="*" class="filter-active">الكل</li>
+                    <li data-filter=".Adminstrator">الادارة</li>
+                    <li data-filter=".chances">فرص</li>
+                    <li data-filter=".advices">نصائح</li>
+                    <li data-filter=".miscellaneous">متنوعة</li>
+                </ul><!-- End Portfolio Filters -->
+            </div>
+
+            <div class="row gy-4 portfolio-container">
+                @foreach (var item in Model.publications)
+                {
+                    <div class="col-xl-4 col-md-6 portfolio-item @item.Department">
+                        <div class="portfolio-wrap">
+                            <a href="~/img/publications/@item.ImageUrl" data-gallery="portfolio-gallery-app" class="glightbox"><img src="~/img/Publications/@item.ImageUrl" class="img-fluid" alt=""></a>
+                            <div class="portfolio-info">
+                                <h4><a title="More Details">@item.Title</a></h4>
+                                <p>@item.Description</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- End Portfolio Item -->
+                }
+
+            </div><!-- End Portfolio Container -->
+
+        </div>
+
+    </div>
+</section>
+<section id="team" class="team">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+            <h2 style="font-family: 'Cairo', sans-serif;">عروض خاصة للموظفين</h2>
+            <h4 style="font-family: 'Cairo', sans-serif; color:cadetblue">تقدم مجموعة من الشركات والمطاعم المشهورة بالمدينة عروض خاصة لموظفي غرفة المدينة المنورة </h4>
+        </div>
+
+        <div class="row gy-4">
+            @foreach (var item in Model.discounts)
+            {
+                <div class="col-xl-4 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+                    <div class="member">
+                        <img src="~/img/discounts/@item.ImageUrl" class="img-fluid" alt="" style="width: 350px; height: 350px;">
+                        <h4>@item.Name</h4>
+                        <span style="font-family: 'Cairo', sans-serif;">@item.description</span>
+                        @if (!string.IsNullOrEmpty(item.TwitterUrl) || !string.IsNullOrEmpty(item.FacebookUrl) || !string.IsNullOrEmpty(item.InsatgramUrl) || !string.IsNullOrEmpty(item.SnapchatUrl))
+                        {
+                            <div class="social">
+                                @if (!string.IsNullOrEmpty(item.TwitterUrl))
+                                {
+                                    <a href="@item.TwitterUrl" target="_blank"><i class="bi bi-twitter"></i></a>
+                                }
+                                @if (!string.IsNullOrEmpty(item.FacebookUrl))
+                                {
+                                    <a href="@item.FacebookUrl" target="_blank"><i class="bi bi-facebook"></i></a>
+                                }
+                                @if (!string.IsNullOrEmpty(item.InsatgramUrl))
+                                {
+                                    <a href="@item.InsatgramUrl" target="_blank"><i class="bi bi-instagram"></i></a>
+                                }
+                                @if (!string.IsNullOrEmpty(item.SnapchatUrl))
+                                {
+                                    <a href="@item.SnapchatUrl" target="_blank"><i class="bi bi-snapchat"></i></a>
+                                }
+                            </div>
+                        }
+                    </div>
+                </div>
+
+                <!-- End Team Member -->
+            }
+
+        </div>
+
+    </div>
+</section><!-- End Our Team Section -->
+<div class="d-grid gap-2 col-2 mx-auto mt-2">
+    <a asp-action="discounts" asp-controller="Home" class="btn btn-success" type="button">المزيد من الخصومات </a>
+</div>
+
+<!--News Section-->
+<section id="recent-posts" class="recent-posts sections-bg">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+            <h2 style="font-family: 'Cairo', sans-serif;">الأخبار</h2>
+            <h4 style="font-family: 'Cairo', sans-serif; color:cadetblue">أحدث الاخبار الخاصة بغرفة المدينة والتي تهتم بالموظفين والمناسبات الخاصة بهم</h4>
+        </div>
+
+        <div class="row gy-4">
+            @foreach (var item in Model.news)
+            {
+                <div class="col-xl-4 col-md-6">
+                    <article>
+
+                        <div class="post-img">
+                            <img src="~/img/news/@item.ImageUrl" alt="" class="img-fluid" style="width: 679px; height: 250px;">
+                        </div>
+
+                        <h3 class="post-category" style="font-family: 'Cairo', sans-serif;">@item.Name</h3>
+
+                        <h2 class="title">
+                            <a asp-action="pdetails" asp-controller="Home" asp-route-id="@item.Id">  @item.Description </a>
+                        </h2>
+
+                        <div class="d-flex align-items-center">
+                            <div class="post-meta">
+                                <p class="post-date">
+                                    <time datetime="2022-01-01">@item.CreateDate</time>
+                                </p>
+                            </div>
+                        </div>
+
+                    </article>
+                </div>
+
+                <!-- End post list item -->
+            }
+
+        </div><!-- End recent posts list -->
+
+    </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="d-grid gap-2 col-2 mx-auto mt-2">
+        <a asp-action="news" asp-controller="Home" class="btn btn-success" type="button">المزيد من الاخبار </a>
+    </div>
+</section>
+
+
+<!-- End Recent Blog Posts Section -->
+
+<section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+            <h2 style="font-family: 'Cairo', sans-serif;">التواصل</h2>
+            <h3 style="font-family: 'Cairo', sans-serif; color:cadetblue">لنتحدث دائماً التواصل الداخلي بإدارة الموارد البشرية </h3>
+        </div>
+        <div class="d-grid gap-2 col-2 mx-auto mt-2">
+            <a asp-action="training" asp-controller="Home" class="btn btn-success" type="button">للتواصل </a>
+        </div>
+    </div>
+</section>
+

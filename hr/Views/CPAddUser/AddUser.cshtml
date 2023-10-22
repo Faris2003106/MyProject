@@ -1,0 +1,54 @@
+﻿@model RegisterViewModel
+@{
+    ViewData["Title"] = "Home Page";
+
+
+}
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Amiri&family=Aref+Ruqaa&family=Cairo:wght@200&display=swap" rel="stylesheet">
+
+<h1 style=" font-family: 'Tajawal', sans-serif; text-align: center;">إضافة مستخدم </h1>
+
+<br />
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <div clss="row">
+                <div class=" col-md-6 grid-margin stretch-card" style="font-family:'Tajawal', sans-serif;">
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="forms-sample" asp-action="AddUser" asp-controller="CPAddUser" method="post">
+                                <div asp-validation-summary="All" class="text-danger"></div>
+                                @* <div class="form-group">
+                                <label for="exampleInputName1">رقم ID</label>
+                                <input type="number" class="form-control" id="exampleInputName1" placeholder="رقم ID">
+                                </div> *@
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">البريد الالكتروني</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="البريد الإلكتروني" asp-for="Email">
+                                    <span asp-validation-for="Email"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword4">كلمة المرور</label>
+                                    <input type="password" class="form-control" id="exampleInputPassword4" placeholder="كلمة المرور" asp-for="Password">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">تأكيد كلمة المرور</label>
+                                    <input type="password" class="form-control" id="exampleInputEmail3" placeholder="تأكيد كلمة المرور" asp-for="ConfirmPassword">
+                                </div>
+                                <button type="submit" class="btn btn-primary mr-2">حفظ</button>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,70 @@
+﻿@model hr.ViewModel.eventsViewModel
+@{
+    ViewData["Title"] = "Home Page";
+
+
+}
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300&family=Amiri&family=Aref+Ruqaa&family=Cairo:wght@200&display=swap" rel="stylesheet">
+
+<h1 style=" font-family: 'Tajawal', sans-serif; text-align: center;">تعديل فعالية </h1>
+
+<br />
+
+<div class="col-lg-12 grid-margin stretch-card">
+    <div class="card">
+        <div class="card-body">
+            <div clss="row">
+                <form class="forms-sample" asp-action="Edit" method="post" enctype="multipart/form-data">
+                    <div class=" col-md-6 grid-margin stretch-card" style="font-family:'Tajawal', sans-serif;">
+                        <div class="card">
+                            <div class="card-body">
+
+                                <input type="hidden" asp-for="ImageUrl" />
+                                <div class="form-group">
+                                    <label for="exampleInputName1">رقم ID</label>
+                                    <input type="number" class="form-control" asp-for="Id" readonly>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">عنوان الفعالية</label>
+                                    <input type="text" class="form-control" asp-for="Name">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword4">تاريخ النشر</label>
+                                    <input type="date" class="form-control" asp-for="CreateDate">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">جهة الفعالية</label>
+                                    <input type="text" class="form-control" asp-for="Organization">
+                                </div>
+                                <div class="form-group">
+                                    <label asp-for="Image">صورة الفعالية</label>
+                                    <input class="form-control" asp-for="Image">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">نص</label>
+                                    <input type="text" class="form-control" asp-for="description">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputEmail3">إظهار الفعالية</label>
+                                    <div class="form-check form-check-flat form-check-primary">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" asp-for="status" class="form-check-input">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary mr-2">حفظ التعديلات</button>
+                    <button type="submit" class="btn btn-danger mr-2"><a asp-action="Index" asp-controller="CPEvents" style="color:white"> إلغاء الحفظ</a></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
